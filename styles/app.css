@@ -63,6 +63,10 @@ body {
 .h2 {
   font-size: 18px;
 }
+.page a {
+  color: #5cb560;
+  font-style: italic;
+}
 .page p {
   margin: 0 0 1em 0;
   font-weight: 400;
@@ -76,7 +80,6 @@ body {
 
 /*links*/
 a {
-  color: babyblue;
   text-decoration: underline;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
@@ -111,7 +114,7 @@ a {
   margin-right: -5px;
 }
 #Header.black {
-  filter: invert(100%);
+  background-color: #708090;
 }
 #Navigation {
   display: none;
@@ -137,8 +140,6 @@ a {
   text-transform: uppercase;
   list-style-type: none;
   font-size: 26px;
-}
-#Body {
 }
 #SaveTheDate {
   background: url("/assets/images/jamela-and-wesley.jpg") 20% 50% no-repeat;

@@ -23,7 +23,7 @@ function Resources({ location }) {
       <h2 className="h2">Accommodations</h2>
       <p>NYC has a number of hotels. You can choose a more millenial stay with AirBnb or alternatives, or you can go Ritzy with any of the many traditional Hotels.</p>
       <p><a href={airbnb}>AirBnB</a> - Like staying at someone elses home.</p>
-      <p>Other <a href={otherAirbnb}>options</a> similar to AirBnb</p>
+      <p>Other <a href={otherAirbnb}>options</a> similar to AirBnb exist, but we have never tried them.</p>
     <p>Traditional hotels like <a href={hilton}>Hilton Garden Inn</a> (same building as our venue) or countless other <a href={hotels}>hotels</a> exist.</p>
     
       <h2 className="h2">Transportation</h2>

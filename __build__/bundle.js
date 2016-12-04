@@ -63,19 +63,19 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _Home = __webpack_require__(/*! ./components/Home */ 252);
+	var _Home = __webpack_require__(/*! ./components/Home */ 253);
 	
 	var _Home2 = _interopRequireDefault(_Home);
 	
-	var _PageNotFound = __webpack_require__(/*! ./components/PageNotFound */ 253);
+	var _PageNotFound = __webpack_require__(/*! ./components/PageNotFound */ 254);
 	
 	var _PageNotFound2 = _interopRequireDefault(_PageNotFound);
 	
-	var _Dress = __webpack_require__(/*! ./components/Dress */ 254);
+	var _Dress = __webpack_require__(/*! ./components/Dress */ 255);
 	
 	var _Dress2 = _interopRequireDefault(_Dress);
 	
-	var _Resources = __webpack_require__(/*! ./components/Resources */ 255);
+	var _Resources = __webpack_require__(/*! ./components/Resources */ 256);
 	
 	var _Resources2 = _interopRequireDefault(_Resources);
 	
@@ -28634,7 +28634,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Nav = __webpack_require__(/*! ./Nav */ 256);
+	var _Nav = __webpack_require__(/*! ./Nav */ 252);
 	
 	var _Nav2 = _interopRequireDefault(_Nav);
 	
@@ -28772,6 +28772,36 @@
 
 /***/ },
 /* 252 */
+/*!***************************!*\
+  !*** ./components/Nav.js ***!
+  \***************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _react2.default.createClass({
+	  displayName: 'Nav',
+	  render: function render() {
+	    return _react2.default.createElement(_reactRouter.Link, _extends({}, this.props, { activeClassName: 'active' }));
+	  }
+	});
+
+/***/ },
+/* 253 */
 /*!*****************************!*\
   !*** ./components/Home.jsx ***!
   \*****************************/
@@ -28880,7 +28910,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 253 */
+/* 254 */
 /*!*************************************!*\
   !*** ./components/PageNotFound.jsx ***!
   \*************************************/
@@ -28923,7 +28953,7 @@
 	exports.default = PageNotFound;
 
 /***/ },
-/* 254 */
+/* 255 */
 /*!******************************!*\
   !*** ./components/Dress.jsx ***!
   \******************************/
@@ -28992,7 +29022,7 @@
 	exports.default = Dress;
 
 /***/ },
-/* 255 */
+/* 256 */
 /*!**********************************!*\
   !*** ./components/Resources.jsx ***!
   \**********************************/
@@ -29071,7 +29101,7 @@
 	        { href: otherAirbnb },
 	        'options'
 	      ),
-	      ' similar to AirBnb'
+	      ' similar to AirBnb exist, but we have never tried them.'
 	    ),
 	    _react2.default.createElement(
 	      'p',
@@ -29155,36 +29185,6 @@
 	Resources.propTypes = propTypes;
 	
 	exports.default = Resources;
-
-/***/ },
-/* 256 */
-/*!***************************!*\
-  !*** ./components/Nav.js ***!
-  \***************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouter = __webpack_require__(/*! react-router */ 178);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = _react2.default.createClass({
-	  displayName: 'Nav',
-	  render: function render() {
-	    return _react2.default.createElement(_reactRouter.Link, _extends({}, this.props, { activeClassName: 'active' }));
-	  }
-	});
 
 /***/ }
 /******/ ]);
