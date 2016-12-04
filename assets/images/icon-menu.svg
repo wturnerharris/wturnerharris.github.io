@@ -1,7 +1,5 @@
-<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
- <g>
-  <rect id="top_bar" height="44" width="423" y="178" x="78.5" stroke-width="1.5" stroke="#000" fill="#ffffff"/>
-  <rect id="mid_bar" height="44" width="423" y="355.25" x="78.5" stroke-width="1.5" stroke="#000" fill="#ffffff"/>
-  <rect id="low_bar" height="44" width="423" y="0.75" x="78.5" stroke-width="1.5" stroke="#000" fill="#ffffff"/>
- </g>
+<svg width="40" height="30" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg">
+  <rect stroke="#fff" fill="#ffffff" x="0" y="0" width="40" height="2"/>
+  <rect stroke="#fff" fill="#ffffff" x="0" y="14" width="40" height="2"/>
+  <rect stroke="#fff" fill="#ffffff" x="0" y="28" width="40" height="2"/>
 </svg>

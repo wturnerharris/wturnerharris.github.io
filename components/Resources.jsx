@@ -6,57 +6,33 @@ const propTypes = {
 };
 
 function Resources({ location }) {
-  const queryPresent = Object.keys(location.query).length !== 0;
-  const hashPresent = location.hash !== '';
-
-  function queryStringTitle() {
-    if (queryPresent) return 'The query string field-value pairs are:';
-    return 'No query string in the url';
-  }
-
-  function hashFragmentTitle() {
-    if (hashPresent) return 'The hash fragment is:';
-    return 'No hash frgament in the url';
-  }
-
-  function linkToShowQueryAndOrHash() {
-    if (queryPresent && hashPresent) return null;
-
-    const queryString = (queryPresent ? location.search : '?field1=foo&field2=bar');
-    const hashFragment = (hashPresent ? location.hash : '#boom!');
-
-    let linkText = '';
-    if (queryPresent && !hashPresent) linkText = 'Show with hash fragment';
-    if (!queryPresent && hashPresent) linkText = 'Show with query string';
-    if (!queryPresent && !hashPresent) linkText = 'Show with query string and hash fragment';
-
-    return (
-      <div><Link to={`/example/two-deep${queryString}${hashFragment}`}>
-        {linkText}
-      </Link></div>
-    );
-  }
+  const airbnb = "https://www.airbnb.com/s/New-York--NY--United-States?guests=1&checkin=12%2F09%2F2016&checkout=12%2F11%2F2016&source=bb&page=1&allow_override%5B%5D=&place_id=ChIJOwg_06VPwokRYv534QaPC8g&ne_lat=40.88316270421261&ne_lng=-73.87969342983223&sw_lat=40.747661924014125&sw_lng=-74.01908246791817&zoom=12&search_by_map=true&ss_id=14nr3wvg&s_tag=k9xqGDTT";
+  const otherAirbnb = "https://techboomers.com/t/sites-like-airbnb";
+  const hilton = "http://hiltongardeninn3.hilton.com/en/hotels/new-york/hilton-garden-inn-times-square-NYCMWGI/index.html";
+  const mta = "http://www.mta.info/";
+  const uber = "https://www.uber.com/?exp=home_signup_form";
+  const arro = "https://www.goarro.com/";
+  const zipcar = "http://www.zipcar.com/";
+  const lyft = "https://www.lyft.com/";
+  const hotels = "https://www.hotels.com/search.do?resolved-location=CITY%3A1506246%3AUNKNOWN%3AUNKNOWN&destination-id=1506246&q-destination=New%20York,%20New%20York,%20United%20States%20of%20America&q-check-in=2017-05-12&q-check-out=2017-05-14&q-rooms=1&q-room-0-adults=2&q-room-0-children=0";
 
   return (
-    <div>
-      <div>
-        <div>{queryStringTitle()}</div>
-        <ul>
-          {Object.keys(location.query).map((field, index) =>
-            <li key={index}>
-              {field}: {location.query[field]}
-            </li>
-          )}
-        </ul>
-      </div>
-      <div>
-        <div>{hashFragmentTitle()}</div>
-        <ul>
-          {hashPresent ? <li>{location.hash.slice(1)}</li> : undefined}
-        </ul>
-      </div>
-      {linkToShowQueryAndOrHash()}
-    </div>
+    <section id="Resources" className="fullscreen page">
+      <h1 className="h1">Resources</h1>
+      <p>Below are some of the recommended resources to help find your way and stay in New York City.</p>
+      <h2 className="h2">Accommodations</h2>
+      <p>NYC has a number of hotels. You can choose a more millenial stay with AirBnb or alternatives, or you can go Ritzy with any of the many traditional Hotels.</p>
+      <p><a href={airbnb}>AirBnB</a> - Like staying at someone elses home.</p>
+      <p>Other <a href={otherAirbnb}>options</a> similar to AirBnb</p>
+    <p>Traditional hotels like <a href={hilton}>Hilton Garden Inn</a> (same building as our venue) or countless other <a href={hotels}>hotels</a> exist.</p>
+    
+      <h2 className="h2">Transportation</h2>
+      <p>We mostly take the Subway here, but there are other ways to get around.</p> 
+      <p>NYC <a href={mta}>MTA</a> Subway - You can get transit cards in any Subway station.</p>
+      <p>Cabs, <a href={uber}>Uber</a>, <a href={lyft}>Lyft</a> - There are a number of millenium-type web apps for getting around. We mostly use Uber, but you can find other <a href={arro}>apps</a> for the yellow cabs or just hail one on the street.</p>
+      <p><a href={zipcar}>ZipCar</a> - you will need already have an account, but you can rent a car by the hour.</p>
+      <p>Traditional - Of course there is Hertz, Enterprise, and others.</p>
+    </section>
   );
 }
 

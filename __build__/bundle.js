@@ -71,11 +71,11 @@
 	
 	var _PageNotFound2 = _interopRequireDefault(_PageNotFound);
 	
-	var _Dress = __webpack_require__(/*! ./components/Dress */ 256);
+	var _Dress = __webpack_require__(/*! ./components/Dress */ 254);
 	
 	var _Dress2 = _interopRequireDefault(_Dress);
 	
-	var _Resources = __webpack_require__(/*! ./components/Resources */ 257);
+	var _Resources = __webpack_require__(/*! ./components/Resources */ 255);
 	
 	var _Resources2 = _interopRequireDefault(_Resources);
 	
@@ -28617,9 +28617,9 @@
 
 /***/ },
 /* 251 */
-/*!****************************!*\
-  !*** ./components/App.jsx ***!
-  \****************************/
+/*!***************************!*\
+  !*** ./components/App.js ***!
+  \***************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28628,119 +28628,146 @@
 	  value: true
 	});
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
 	var _react = __webpack_require__(/*! react */ 1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRouter = __webpack_require__(/*! react-router */ 178);
+	var _Nav = __webpack_require__(/*! ./Nav */ 256);
+	
+	var _Nav2 = _interopRequireDefault(_Nav);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var propTypes = {
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var App = function (_React$Component) {
+	  _inherits(App, _React$Component);
+	
+	  function App(props) {
+	    _classCallCheck(this, App);
+	
+	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+	
+	    _this.state = {
+	      mainTitle: "#WesAndJamboree2017",
+	      menuState: "open"
+	    };
+	    return _this;
+	  }
+	
+	  _createClass(App, [{
+	    key: 'MenuToggle',
+	    value: function MenuToggle() {
+	      var nav = document.getElementById('Navigation');
+	      var nextMenuState = this.state.menuState === 'closed' ? 'open' : 'closed';
+	      this.setState({ menuState: nextMenuState });
+	      nav.className = this.state.menuState;
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var navState = this.props.location.pathname !== '/' ? "black" : "white";
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'wrapper' },
+	        _react2.default.createElement(
+	          'header',
+	          { id: 'Header', className: navState },
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            this.state.mainTitle
+	          ),
+	          _react2.default.createElement(
+	            'button',
+	            { onClick: this.MenuToggle.bind(this) },
+	            'Menu'
+	          ),
+	          _react2.default.createElement(
+	            'nav',
+	            { id: 'Navigation', onClick: this.MenuToggle.bind(this) },
+	            _react2.default.createElement(
+	              'ul',
+	              null,
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _Nav2.default,
+	                  { to: '/' },
+	                  'Deets'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _Nav2.default,
+	                  { to: '/dress' },
+	                  'Dress'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _Nav2.default,
+	                  { to: '/resources' },
+	                  'Resources'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _Nav2.default,
+	                  { to: '/registry' },
+	                  'Registry'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _Nav2.default,
+	                  { to: '/see-hear-do' },
+	                  'See-Hear-Do'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _Nav2.default,
+	                  { to: '/next-day-brunch' },
+	                  'Next-Day Brunch'
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'main',
+	          { id: 'Body' },
+	          this.props.children
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return App;
+	}(_react2.default.Component);
+	
+	App.propTypes = {
 	  children: _react.PropTypes.element.isRequired,
 	  routes: _react.PropTypes.array.isRequired
 	};
-	
-	function App(_ref) {
-	  var children = _ref.children,
-	      routes = _ref.routes;
-	
-	  var mainTitle = "#WesAndJamboree2017";
-	
-	  function MenuToggle() {
-	    var nav = document.getElementById('Navigation');
-	    nav.className = nav.className === "closed" ? "open" : "closed";
-	  }
-	
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'wrapper' },
-	    _react2.default.createElement(
-	      'header',
-	      { id: 'Header' },
-	      _react2.default.createElement(
-	        'h1',
-	        null,
-	        mainTitle
-	      ),
-	      _react2.default.createElement(
-	        'button',
-	        { onClick: MenuToggle },
-	        'Menu'
-	      ),
-	      _react2.default.createElement(
-	        'nav',
-	        { id: 'Navigation', className: 'closed' },
-	        _react2.default.createElement(
-	          'ul',
-	          null,
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: '/' },
-	              'Deets'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: '/dress' },
-	              'Dress'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: '/resources' },
-	              'Resources'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: '/registry' },
-	              'Registry'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: '/see-hear-do' },
-	              'See-Hear-Do'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: '/next-day-brunch' },
-	              'Next-Day Brunch'
-	            )
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'main',
-	      { id: 'Body' },
-	      children
-	    )
-	  );
-	}
-	
-	App.propTypes = propTypes;
-	
 	exports.default = App;
 
 /***/ },
@@ -28774,7 +28801,7 @@
 	
 	  return _react2.default.createElement(
 	    'section',
-	    { id: 'SaveTheDate' },
+	    { id: 'SaveTheDate', className: 'fullscreen' },
 	    _react2.default.createElement(
 	      'p',
 	      null,
@@ -28896,9 +28923,7 @@
 	exports.default = PageNotFound;
 
 /***/ },
-/* 254 */,
-/* 255 */,
-/* 256 */
+/* 254 */
 /*!******************************!*\
   !*** ./components/Dress.jsx ***!
   \******************************/
@@ -28926,21 +28951,38 @@
 	  var children = _ref.children;
 	
 	  return _react2.default.createElement(
-	    'div',
-	    null,
+	    'section',
+	    { id: 'Dress', className: 'fullscreen page' },
+	    _react2.default.createElement(
+	      'h1',
+	      { className: 'h1' },
+	      'Dress Code'
+	    ),
+	    _react2.default.createElement(
+	      'h2',
+	      { className: 'h2' },
+	      'What to Wear'
+	    ),
 	    _react2.default.createElement(
 	      'p',
 	      null,
-	      'This is an example page. Refresh the page or copy/paste the url to test out the redirect functionality (this same page should load after the redirect).'
+	      'The theme of the wedding is "Date Night" in NYC. It\u2019s cocktail attire that makes you feel sexy and that you would wear on a date in New York City. Keep in mind, it is a wedding. White dresses are prohibited.'
 	    ),
-	    children || _react2.default.createElement(
-	      'div',
+	    _react2.default.createElement(
+	      'h2',
+	      { className: 'h2' },
+	      'Pinterest'
+	    ),
+	    _react2.default.createElement(
+	      'p',
 	      null,
+	      ' If you are unsure what might be appropriate, please check out our ',
 	      _react2.default.createElement(
-	        _reactRouter.Link,
-	        { to: '/example/two-deep?field1=foo&field2=bar#boom!' },
-	        'Example two deep with query and hash'
-	      )
+	        'a',
+	        { href: 'https://www.pinterest.com/jamelazarha/dress-code/' },
+	        'pinterest'
+	      ),
+	      ' board with inspiration for what to wear on our special night out.'
 	    )
 	  );
 	}
@@ -28950,7 +28992,7 @@
 	exports.default = Dress;
 
 /***/ },
-/* 257 */
+/* 255 */
 /*!**********************************!*\
   !*** ./components/Resources.jsx ***!
   \**********************************/
@@ -28977,91 +29019,172 @@
 	function Resources(_ref) {
 	  var location = _ref.location;
 	
-	  var queryPresent = Object.keys(location.query).length !== 0;
-	  var hashPresent = location.hash !== '';
-	
-	  function queryStringTitle() {
-	    if (queryPresent) return 'The query string field-value pairs are:';
-	    return 'No query string in the url';
-	  }
-	
-	  function hashFragmentTitle() {
-	    if (hashPresent) return 'The hash fragment is:';
-	    return 'No hash frgament in the url';
-	  }
-	
-	  function linkToShowQueryAndOrHash() {
-	    if (queryPresent && hashPresent) return null;
-	
-	    var queryString = queryPresent ? location.search : '?field1=foo&field2=bar';
-	    var hashFragment = hashPresent ? location.hash : '#boom!';
-	
-	    var linkText = '';
-	    if (queryPresent && !hashPresent) linkText = 'Show with hash fragment';
-	    if (!queryPresent && hashPresent) linkText = 'Show with query string';
-	    if (!queryPresent && !hashPresent) linkText = 'Show with query string and hash fragment';
-	
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactRouter.Link,
-	        { to: '/example/two-deep' + queryString + hashFragment },
-	        linkText
-	      )
-	    );
-	  }
+	  var airbnb = "https://www.airbnb.com/s/New-York--NY--United-States?guests=1&checkin=12%2F09%2F2016&checkout=12%2F11%2F2016&source=bb&page=1&allow_override%5B%5D=&place_id=ChIJOwg_06VPwokRYv534QaPC8g&ne_lat=40.88316270421261&ne_lng=-73.87969342983223&sw_lat=40.747661924014125&sw_lng=-74.01908246791817&zoom=12&search_by_map=true&ss_id=14nr3wvg&s_tag=k9xqGDTT";
+	  var otherAirbnb = "https://techboomers.com/t/sites-like-airbnb";
+	  var hilton = "http://hiltongardeninn3.hilton.com/en/hotels/new-york/hilton-garden-inn-times-square-NYCMWGI/index.html";
+	  var mta = "http://www.mta.info/";
+	  var uber = "https://www.uber.com/?exp=home_signup_form";
+	  var arro = "https://www.goarro.com/";
+	  var zipcar = "http://www.zipcar.com/";
+	  var lyft = "https://www.lyft.com/";
+	  var hotels = "https://www.hotels.com/search.do?resolved-location=CITY%3A1506246%3AUNKNOWN%3AUNKNOWN&destination-id=1506246&q-destination=New%20York,%20New%20York,%20United%20States%20of%20America&q-check-in=2017-05-12&q-check-out=2017-05-14&q-rooms=1&q-room-0-adults=2&q-room-0-children=0";
 	
 	  return _react2.default.createElement(
-	    'div',
-	    null,
+	    'section',
+	    { id: 'Resources', className: 'fullscreen page' },
 	    _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'div',
-	        null,
-	        queryStringTitle()
-	      ),
-	      _react2.default.createElement(
-	        'ul',
-	        null,
-	        Object.keys(location.query).map(function (field, index) {
-	          return _react2.default.createElement(
-	            'li',
-	            { key: index },
-	            field,
-	            ': ',
-	            location.query[field]
-	          );
-	        })
-	      )
+	      'h1',
+	      { className: 'h1' },
+	      'Resources'
 	    ),
 	    _react2.default.createElement(
-	      'div',
+	      'p',
+	      null,
+	      'Below are some of the recommended resources to help find your way and stay in New York City.'
+	    ),
+	    _react2.default.createElement(
+	      'h2',
+	      { className: 'h2' },
+	      'Accommodations'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'NYC has a number of hotels. You can choose a more millenial stay with AirBnb or alternatives, or you can go Ritzy with any of the many traditional Hotels.'
+	    ),
+	    _react2.default.createElement(
+	      'p',
 	      null,
 	      _react2.default.createElement(
-	        'div',
-	        null,
-	        hashFragmentTitle()
+	        'a',
+	        { href: airbnb },
+	        'AirBnB'
 	      ),
-	      _react2.default.createElement(
-	        'ul',
-	        null,
-	        hashPresent ? _react2.default.createElement(
-	          'li',
-	          null,
-	          location.hash.slice(1)
-	        ) : undefined
-	      )
+	      ' - Like staying at someone elses home.'
 	    ),
-	    linkToShowQueryAndOrHash()
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'Other ',
+	      _react2.default.createElement(
+	        'a',
+	        { href: otherAirbnb },
+	        'options'
+	      ),
+	      ' similar to AirBnb'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'Traditional hotels like ',
+	      _react2.default.createElement(
+	        'a',
+	        { href: hilton },
+	        'Hilton Garden Inn'
+	      ),
+	      ' (same building as our venue) or countless other ',
+	      _react2.default.createElement(
+	        'a',
+	        { href: hotels },
+	        'hotels'
+	      ),
+	      ' exist.'
+	    ),
+	    _react2.default.createElement(
+	      'h2',
+	      { className: 'h2' },
+	      'Transportation'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'We mostly take the Subway here, but there are other ways to get around.'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'NYC ',
+	      _react2.default.createElement(
+	        'a',
+	        { href: mta },
+	        'MTA'
+	      ),
+	      ' Subway - You can get transit cards in any Subway station.'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'Cabs, ',
+	      _react2.default.createElement(
+	        'a',
+	        { href: uber },
+	        'Uber'
+	      ),
+	      ', ',
+	      _react2.default.createElement(
+	        'a',
+	        { href: lyft },
+	        'Lyft'
+	      ),
+	      ' - There are a number of millenium-type web apps for getting around. We mostly use Uber, but you can find other ',
+	      _react2.default.createElement(
+	        'a',
+	        { href: arro },
+	        'apps'
+	      ),
+	      ' for the yellow cabs or just hail one on the street.'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      _react2.default.createElement(
+	        'a',
+	        { href: zipcar },
+	        'ZipCar'
+	      ),
+	      ' - you will need already have an account, but you can rent a car by the hour.'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'Traditional - Of course there is Hertz, Enterprise, and others.'
+	    )
 	  );
 	}
 	
 	Resources.propTypes = propTypes;
 	
 	exports.default = Resources;
+
+/***/ },
+/* 256 */
+/*!***************************!*\
+  !*** ./components/Nav.js ***!
+  \***************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _react2.default.createClass({
+	  displayName: 'Nav',
+	  render: function render() {
+	    return _react2.default.createElement(_reactRouter.Link, _extends({}, this.props, { activeClassName: 'active' }));
+	  }
+	});
 
 /***/ }
 /******/ ]);

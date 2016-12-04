@@ -12,7 +12,7 @@ html, body, div, span, a, p, ul, li, h1, code, nav {
 }
 
 html {
-  background-color: rgb(0, 120, 0);
+  background-color: #f0f0f0;
 }
 
 body {
@@ -51,58 +51,39 @@ body {
   transform: translate(-50%, 0);
 }
 
+.h1, .h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 0 0.5em;
+  letter-spacing: 0.1em;
+}
+.h1 {
+  font-size: 22px;
+}
+.h2 {
+  font-size: 18px;
+}
+.page p {
+  margin: 0 0 1em 0;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", "Roboto", "Oxygen", 
+    "Ubuntu", "Cantarell", "Fira Sans", 
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: -0.01em;
+  line-height: 1.4em;
+}
+
 /*links*/
 a {
-  border-bottom: 1px dotted rgb(0, 168, 0);
+  color: babyblue;
+  text-decoration: underline;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
 
-a:hover, a:active {
-  border-bottom: 1px solid rgb(0, 168, 0);
-}
-
-.current-input-touch a:hover {
-  border-bottom: 1px dotted rgb(0, 168, 0);
-  color: inherit;
-}
-
-.current-input-touch a:active {
-  border-bottom: 1px dashed rgb(0, 168, 0);
-}
-
-/*extended link*/
-.extended-link {
-  border: none;
-}
-
-.extended-link:hover, .extended-link:active,
-.current-input-touch .extended-link:active, .current-input-touch .extended-link:hover {
-  border: none;
-  color: inherit;
-}
-
-.extended-link > span {
-  border-bottom: 1px dotted rgb(0, 168, 0);
-}
-
-.extended-link:hover > span, .extended-link:active > span {
-  border-bottom: 1px solid rgb(0, 168, 0);
-  color: black;
-}
-
-.current-input-touch .extended-link:hover > span {
-  border-bottom: 1px dotted rgb(0, 168, 0);
-  color: inherit;
-}
-
-.current-input-touch .extended-link:active > span {
-  border-bottom: 1px dashed rgb(0, 168, 0);
-  color: black;
-}
-
 #Header {
-  padding: 1em 1em;
+  padding: 1em 30px;
   position: fixed;
   top: 0;
   left: 0;
@@ -113,11 +94,12 @@ a:hover, a:active {
   display: inline-block;
   text-transform: uppercase;
   color: white;
+  margin-top: 5px;
 }
 #Header button {
   display: inline-block;
   text-indent: -9999px;
-  background: url("/assets/images/icon-menu.svg") center center no-repeat;
+  background: url(/assets/images/icon-menu.svg) center center no-repeat;
   background-size: contain;
   outline: none;
   border: none;
@@ -126,8 +108,13 @@ a:hover, a:active {
   height: 30px;
   float: right;
   z-index: 10;
+  margin-right: -5px;
+}
+#Header.black {
+  filter: invert(100%);
 }
 #Navigation {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -136,8 +123,8 @@ a:hover, a:active {
   z-index: 9;
   background-color: rgba(0,0,0,0.85);
 }
-#Navigation.closed {
-  display: none;
+#Navigation.open {
+  display: block;
 }
 #Navigation ul {
   height: 100vh;
@@ -145,7 +132,7 @@ a:hover, a:active {
   box-sizing: border-box;
 }
 #Navigation li {
-  height: calc(100vh/6);
+  height: calc(100vh/7);
   color: white;
   text-transform: uppercase;
   list-style-type: none;
@@ -158,9 +145,14 @@ a:hover, a:active {
   background-size: cover;
   padding: 60px 30px 30px;
   text-align: center;
+  color: white;
+}
+.fullscreen {
+  padding: 80px 30px 30px;
+  text-align: left;
   height: 100vh;
   width: 100vw;
-  color: white;
+  color: black;
   box-sizing: border-box;
 }
 #SaveTheDate p {

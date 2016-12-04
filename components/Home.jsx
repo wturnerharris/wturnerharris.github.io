@@ -18,7 +18,7 @@ function Home() {
   };
 
   return (
-    <section id="SaveTheDate">
+    <section id="SaveTheDate" className="fullscreen">
       <p>
         <span className="bride first">{data.bride[0]}</span><br/>
         <span className="bride second">{data.bride[1]}</span><br/>
