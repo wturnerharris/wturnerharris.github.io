@@ -8,7 +8,7 @@ import Home from './components/Home';
 import PageNotFound from './components/PageNotFound';
 import Dress from './components/Dress';
 import Resources from './components/Resources';
-
+import Registry from './components/Registry';
 
 const routes = (
   <Route path="/" mapMenuTitle="Home" component={App}>
@@ -16,6 +16,7 @@ const routes = (
 
     <Route path="dress" mapMenuTitle="Dress" component={Dress}/>
     <Route path="resources" mapMenuTitle="Resources" component={Resources}/>
+    <Route path="registry" mapMenuTitle="Registry" component={Registry}/>
     <Route path="*" mapMenuTitle="Page Not Found" component={PageNotFound} />
   </Route>
 );

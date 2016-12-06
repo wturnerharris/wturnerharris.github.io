@@ -79,6 +79,10 @@
 	
 	var _Resources2 = _interopRequireDefault(_Resources);
 	
+	var _Registry = __webpack_require__(/*! ./components/Registry */ 257);
+	
+	var _Registry2 = _interopRequireDefault(_Registry);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var routes = _react2.default.createElement(
@@ -87,6 +91,7 @@
 	  _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: 'dress', mapMenuTitle: 'Dress', component: _Dress2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: 'resources', mapMenuTitle: 'Resources', component: _Resources2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: 'registry', mapMenuTitle: 'Registry', component: _Registry2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: '*', mapMenuTitle: 'Page Not Found', component: _PageNotFound2.default })
 	);
 	//    <Route path="registry" mapMenuTitle="Registry" component={Registry}/>
@@ -29185,6 +29190,113 @@
 	Resources.propTypes = propTypes;
 	
 	exports.default = Resources;
+
+/***/ },
+/* 257 */
+/*!*********************************!*\
+  !*** ./components/Registry.jsx ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var propTypes = {
+	  location: _react.PropTypes.object.isRequired
+	};
+	
+	function Registry(_ref) {
+	  var location = _ref.location;
+	
+	  var theknot = "https://registry.theknot.com/wesley-turner-harris-jamela-williams-june-2017-ny/15318432";
+	  var target = "http://www.target.com/gift-registry/giftgiver?registryId=9ilRGKmB6Uxfl5AHzzDD9A";
+	  var bbb = "https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?eventType=Wedding&inventoryCallEnabled=true&registryId=543969976";
+	  var amazon = "https://www.amazon.com/wedding/share/wes-and-jam";
+	  var cb1 = "http://www.crateandbarrel.com/gift-registry/wesley-turner-harris-and-jamela-williams/r5618147";
+	  var cb2 = "http://www.crateandbarrel.com/gift-registry/jamela-williams-and-wesley-turner-harris/r5616507";
+	
+	  return _react2.default.createElement(
+	    'section',
+	    { id: 'Registry', className: 'fullscreen page' },
+	    _react2.default.createElement(
+	      'h1',
+	      { className: 'h1' },
+	      'Registry'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'Want to contribute to our wedding registry? We have signed up on some popular sites.'
+	    ),
+	    _react2.default.createElement(
+	      'h2',
+	      { className: 'h2' },
+	      'More Info'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'You can visit any of the below registries, or visit ',
+	      _react2.default.createElement(
+	        'a',
+	        { href: theknot },
+	        'theknot.com'
+	      ),
+	      ' to see our entire wish-list on one page!'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      _react2.default.createElement(
+	        'a',
+	        { href: target },
+	        'Target'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      _react2.default.createElement(
+	        'a',
+	        { href: amazon },
+	        'Amazon'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      _react2.default.createElement(
+	        'a',
+	        { href: bbb },
+	        'Bed Bath & Beyond'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      _react2.default.createElement(
+	        'a',
+	        { href: cb1 },
+	        'Crate & Barrel'
+	      )
+	    )
+	  );
+	}
+	
+	Registry.propTypes = propTypes;
+	
+	exports.default = Registry;
 
 /***/ }
 /******/ ]);
