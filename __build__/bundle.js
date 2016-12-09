@@ -29199,7 +29199,7 @@
 	  var theknot = "https://registry.theknot.com/wesley-turner-harris-jamela-williams-june-2017-ny/15318432";
 	  var target = "http://www.target.com/gift-registry/giftgiver?registryId=9ilRGKmB6Uxfl5AHzzDD9A";
 	  var bbb = "https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?eventType=Wedding&inventoryCallEnabled=true&registryId=543969976";
-	  var amazon = "https://www.amazon.com/wedding/share/wes-and-jam";
+	  var amazon = "https://www.amazon.com/wedding/wesley-turner-harris-jamela-williams-new-york-june-2017/registry/2CT7N4FH9XX5T";
 	  var cb1 = "http://www.crateandbarrel.com/gift-registry/wesley-turner-harris-and-jamela-williams/r5618147";
 	  var cb2 = "http://www.crateandbarrel.com/gift-registry/jamela-williams-and-wesley-turner-harris/r5616507";
 	
