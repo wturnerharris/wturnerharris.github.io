@@ -36,8 +36,6 @@ export default class App extends React.Component {
               <li><Nav to="/dress">Dress</Nav></li>
               <li><Nav to="/resources">Resources</Nav></li>
               <li><Nav to="/registry">Registry</Nav></li>
-              <li><Nav to="/see-hear-do">See-Hear-Do</Nav></li>
-              <li><Nav to="/next-day-brunch">Next-Day Brunch</Nav></li>
             </ul>
           </nav>
         </header>

@@ -6,7 +6,7 @@ const propTypes = {
 };
 
 function Resources({ location }) {
-  const airbnb = "https://www.airbnb.com/s/New-York--NY--United-States?guests=1&checkin=12%2F09%2F2016&checkout=12%2F11%2F2016&source=bb&page=1&allow_override%5B%5D=&place_id=ChIJOwg_06VPwokRYv534QaPC8g&ne_lat=40.88316270421261&ne_lng=-73.87969342983223&sw_lat=40.747661924014125&sw_lng=-74.01908246791817&zoom=12&search_by_map=true&ss_id=14nr3wvg&s_tag=k9xqGDTT";
+  const airbnb = "https://www.airbnb.com/s/New-York--NY--United-States?guests=1&checkin=06%2F08%2F2017&checkout=06%2F12%2F2017&source=bb&page=1&allow_override%5B%5D=&place_id=ChIJOwg_06VPwokRYv534QaPC8g&ne_lat=40.88316270421261&ne_lng=-73.87969342983223&sw_lat=40.747661924014125&sw_lng=-74.01908246791817&zoom=12&search_by_map=true&ss_id=14nr3wvg&s_tag=k9xqGDTT";
   const otherAirbnb = "https://techboomers.com/t/sites-like-airbnb";
   const hilton = "http://hiltongardeninn3.hilton.com/en/hotels/new-york/hilton-garden-inn-times-square-NYCMWGI/index.html";
   const mta = "http://www.mta.info/";
@@ -14,7 +14,7 @@ function Resources({ location }) {
   const arro = "https://www.goarro.com/";
   const zipcar = "http://www.zipcar.com/";
   const lyft = "https://www.lyft.com/";
-  const hotels = "https://www.hotels.com/search.do?resolved-location=CITY%3A1506246%3AUNKNOWN%3AUNKNOWN&destination-id=1506246&q-destination=New%20York,%20New%20York,%20United%20States%20of%20America&q-check-in=2017-05-12&q-check-out=2017-05-14&q-rooms=1&q-room-0-adults=2&q-room-0-children=0";
+  const hotels = "https://www.hotels.com/search.do?resolved-location=CITY%3A1506246%3AUNKNOWN%3AUNKNOWN&destination-id=1506246&q-destination=New%20York,%20New%20York,%20United%20States%20of%20America&q-check-in=2017-06-08&q-check-out=2017-06-12&q-rooms=1&q-room-0-adults=2&q-room-0-children=0";
 
   return (
     <section id="Resources" className="fullscreen page">

@@ -28735,24 +28735,6 @@
 	                  { to: '/registry' },
 	                  'Registry'
 	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                null,
-	                _react2.default.createElement(
-	                  _Nav2.default,
-	                  { to: '/see-hear-do' },
-	                  'See-Hear-Do'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                null,
-	                _react2.default.createElement(
-	                  _Nav2.default,
-	                  { to: '/next-day-brunch' },
-	                  'Next-Day Brunch'
-	                )
 	              )
 	            )
 	          )
@@ -28831,7 +28813,7 @@
 	    "bride": ['Jamela', 'Williams'],
 	    "groom": ['Wesley', 'Turner-Harris'],
 	    "invite": ['invite you to', 'celebrate their marriage', 'saturday, june 10, 2017', 'at seven in the evening'],
-	    "location": ['the attic rooftop', 'new york, ny']
+	    "location": ['new york, ny']
 	  };
 	
 	  return _react2.default.createElement(
@@ -28896,16 +28878,11 @@
 	      ),
 	      _react2.default.createElement('br', null),
 	      _react2.default.createElement('br', null),
-	      _react2.default.createElement(
-	        'span',
-	        { className: 'location' },
-	        data.location[0]
-	      ),
 	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
 	        'span',
 	        { className: 'location' },
-	        data.location[1]
+	        data.location[0]
 	      ),
 	      _react2.default.createElement('br', null)
 	    )
@@ -29054,7 +29031,7 @@
 	function Resources(_ref) {
 	  var location = _ref.location;
 	
-	  var airbnb = "https://www.airbnb.com/s/New-York--NY--United-States?guests=1&checkin=12%2F09%2F2016&checkout=12%2F11%2F2016&source=bb&page=1&allow_override%5B%5D=&place_id=ChIJOwg_06VPwokRYv534QaPC8g&ne_lat=40.88316270421261&ne_lng=-73.87969342983223&sw_lat=40.747661924014125&sw_lng=-74.01908246791817&zoom=12&search_by_map=true&ss_id=14nr3wvg&s_tag=k9xqGDTT";
+	  var airbnb = "https://www.airbnb.com/s/New-York--NY--United-States?guests=1&checkin=06%2F08%2F2017&checkout=06%2F12%2F2017&source=bb&page=1&allow_override%5B%5D=&place_id=ChIJOwg_06VPwokRYv534QaPC8g&ne_lat=40.88316270421261&ne_lng=-73.87969342983223&sw_lat=40.747661924014125&sw_lng=-74.01908246791817&zoom=12&search_by_map=true&ss_id=14nr3wvg&s_tag=k9xqGDTT";
 	  var otherAirbnb = "https://techboomers.com/t/sites-like-airbnb";
 	  var hilton = "http://hiltongardeninn3.hilton.com/en/hotels/new-york/hilton-garden-inn-times-square-NYCMWGI/index.html";
 	  var mta = "http://www.mta.info/";
@@ -29062,7 +29039,7 @@
 	  var arro = "https://www.goarro.com/";
 	  var zipcar = "http://www.zipcar.com/";
 	  var lyft = "https://www.lyft.com/";
-	  var hotels = "https://www.hotels.com/search.do?resolved-location=CITY%3A1506246%3AUNKNOWN%3AUNKNOWN&destination-id=1506246&q-destination=New%20York,%20New%20York,%20United%20States%20of%20America&q-check-in=2017-05-12&q-check-out=2017-05-14&q-rooms=1&q-room-0-adults=2&q-room-0-children=0";
+	  var hotels = "https://www.hotels.com/search.do?resolved-location=CITY%3A1506246%3AUNKNOWN%3AUNKNOWN&destination-id=1506246&q-destination=New%20York,%20New%20York,%20United%20States%20of%20America&q-check-in=2017-06-08&q-check-out=2017-06-12&q-rooms=1&q-room-0-adults=2&q-room-0-children=0";
 	
 	  return _react2.default.createElement(
 	    'section',

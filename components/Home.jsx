@@ -12,7 +12,6 @@ function Home() {
       'at seven in the evening'
     ],
     "location" : [
-      'the attic rooftop',
       'new york, ny'
     ]
   };
@@ -31,8 +30,8 @@ function Home() {
         <span className="invite">{data.invite[2]}</span><br/>
         <span className="invite">{data.invite[3]}</span><br/>
         <br/>
+        <br/>
         <span className="location">{data.location[0]}</span><br/>
-        <span className="location">{data.location[1]}</span><br/>
       </p>
     </section>
   );
