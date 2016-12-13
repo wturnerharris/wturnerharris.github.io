@@ -22,15 +22,15 @@ function Resources({ location }) {
       <p>Below are some of the recommended resources to help find your way and stay in New York City.</p>
       <h2 className="h2">Accommodations</h2>
       <p>NYC has a number of hotels. You can choose a more millenial stay with AirBnb or alternatives, or you can go Ritzy with any of the many traditional Hotels.</p>
-      <p><a href={airbnb}>AirBnB</a> - Like staying at someone elses home.</p>
-      <p>Other <a href={otherAirbnb}>options</a> similar to AirBnb exist, but we have never tried them.</p>
-    <p>Traditional hotels like <a href={hilton}>Hilton Garden Inn</a> (same building as our venue) or countless other <a href={hotels}>hotels</a> exist.</p>
+      <p><a href={airbnb} target="_blank" rel="noopener noreferrer">AirBnB</a> - Like staying at someone elses home.</p>
+      <p>Other <a href={otherAirbnb} target="_blank" rel="noopener noreferrer">options</a> similar to AirBnb exist, but we have never tried them.</p>
+      <p>Traditional hotels like <a href={hilton} target="_blank" rel="noopener noreferrer">Hilton Garden Inn</a> (same building as our venue) or countless other <a href={hotels} target="_blank" rel="noopener noreferrer">hotels</a> exist.</p>
     
       <h2 className="h2">Transportation</h2>
       <p>We mostly take the Subway here, but there are other ways to get around.</p> 
-      <p>NYC <a href={mta}>MTA</a> Subway - You can get transit cards in any Subway station.</p>
-      <p>Cabs, <a href={uber}>Uber</a>, <a href={lyft}>Lyft</a> - There are a number of millenium-type web apps for getting around. We mostly use Uber, but you can find other <a href={arro}>apps</a> for the yellow cabs or just hail one on the street.</p>
-      <p><a href={zipcar}>ZipCar</a> - you will need already have an account, but you can rent a car by the hour.</p>
+      <p>NYC <a href={mta} target="_blank" rel="noopener noreferrer">MTA</a> Subway - You can get transit cards in any Subway station.</p>
+      <p>Cabs, <a href={uber} target="_blank" rel="noopener noreferrer">Uber</a>, <a href={lyft} target="_blank" rel="noopener noreferrer">Lyft</a> - There are a number of millenium-type web apps for getting around. We mostly use Uber, but you can find other <a href={arro} target="_blank" rel="noopener noreferrer">apps</a> for the yellow cabs or just hail one on the street.</p>
+      <p><a href={zipcar} target="_blank" rel="noopener noreferrer">ZipCar</a> - you will need already have an account, but you can rent a car by the hour.</p>
       <p>Traditional - Of course there is Hertz, Enterprise, and others.</p>
     </section>
   );

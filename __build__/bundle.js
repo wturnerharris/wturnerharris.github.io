@@ -28991,7 +28991,7 @@
 	      ' If you are unsure what might be appropriate, please check out our ',
 	      _react2.default.createElement(
 	        'a',
-	        { href: 'https://www.pinterest.com/jamelazarha/dress-code/' },
+	        { href: 'https://www.pinterest.com/jamelazarha/dress-code/', target: '_blank', rel: 'noopener noreferrer' },
 	        'pinterest'
 	      ),
 	      ' board with inspiration for what to wear on our special night out.'
@@ -29069,7 +29069,7 @@
 	      null,
 	      _react2.default.createElement(
 	        'a',
-	        { href: airbnb },
+	        { href: airbnb, target: '_blank', rel: 'noopener noreferrer' },
 	        'AirBnB'
 	      ),
 	      ' - Like staying at someone elses home.'
@@ -29080,7 +29080,7 @@
 	      'Other ',
 	      _react2.default.createElement(
 	        'a',
-	        { href: otherAirbnb },
+	        { href: otherAirbnb, target: '_blank', rel: 'noopener noreferrer' },
 	        'options'
 	      ),
 	      ' similar to AirBnb exist, but we have never tried them.'
@@ -29091,13 +29091,13 @@
 	      'Traditional hotels like ',
 	      _react2.default.createElement(
 	        'a',
-	        { href: hilton },
+	        { href: hilton, target: '_blank', rel: 'noopener noreferrer' },
 	        'Hilton Garden Inn'
 	      ),
 	      ' (same building as our venue) or countless other ',
 	      _react2.default.createElement(
 	        'a',
-	        { href: hotels },
+	        { href: hotels, target: '_blank', rel: 'noopener noreferrer' },
 	        'hotels'
 	      ),
 	      ' exist.'
@@ -29118,7 +29118,7 @@
 	      'NYC ',
 	      _react2.default.createElement(
 	        'a',
-	        { href: mta },
+	        { href: mta, target: '_blank', rel: 'noopener noreferrer' },
 	        'MTA'
 	      ),
 	      ' Subway - You can get transit cards in any Subway station.'
@@ -29129,19 +29129,19 @@
 	      'Cabs, ',
 	      _react2.default.createElement(
 	        'a',
-	        { href: uber },
+	        { href: uber, target: '_blank', rel: 'noopener noreferrer' },
 	        'Uber'
 	      ),
 	      ', ',
 	      _react2.default.createElement(
 	        'a',
-	        { href: lyft },
+	        { href: lyft, target: '_blank', rel: 'noopener noreferrer' },
 	        'Lyft'
 	      ),
 	      ' - There are a number of millenium-type web apps for getting around. We mostly use Uber, but you can find other ',
 	      _react2.default.createElement(
 	        'a',
-	        { href: arro },
+	        { href: arro, target: '_blank', rel: 'noopener noreferrer' },
 	        'apps'
 	      ),
 	      ' for the yellow cabs or just hail one on the street.'
@@ -29151,7 +29151,7 @@
 	      null,
 	      _react2.default.createElement(
 	        'a',
-	        { href: zipcar },
+	        { href: zipcar, target: '_blank', rel: 'noopener noreferrer' },
 	        'ZipCar'
 	      ),
 	      ' - you will need already have an account, but you can rent a car by the hour.'
