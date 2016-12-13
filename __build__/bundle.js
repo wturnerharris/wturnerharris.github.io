@@ -29200,8 +29200,7 @@
 	  var target = "http://www.target.com/gift-registry/giftgiver?registryId=9ilRGKmB6Uxfl5AHzzDD9A";
 	  var bbb = "https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?eventType=Wedding&inventoryCallEnabled=true&registryId=543969976";
 	  var amazon = "https://www.amazon.com/wedding/wesley-turner-harris-jamela-williams-new-york-june-2017/registry/2CT7N4FH9XX5T";
-	  var cb1 = "http://www.crateandbarrel.com/gift-registry/wesley-turner-harris-and-jamela-williams/r5618147";
-	  var cb2 = "http://www.crateandbarrel.com/gift-registry/jamela-williams-and-wesley-turner-harris/r5616507";
+	  var cb1 = "http://www.crateandbarrel.com/gift-registry/jamela-williams-and-wesley-turner-harris/r5616507";
 	
 	  return _react2.default.createElement(
 	    'section',
@@ -29227,7 +29226,7 @@
 	      'You can visit any of the below registries, or visit ',
 	      _react2.default.createElement(
 	        'a',
-	        { href: theknot },
+	        { href: theknot, target: '_blank', rel: 'noopener noreferrer' },
 	        'theknot.com'
 	      ),
 	      ' to see our entire wish-list on one page!'
@@ -29237,7 +29236,7 @@
 	      null,
 	      _react2.default.createElement(
 	        'a',
-	        { href: target },
+	        { href: target, target: '_blank', rel: 'noopener noreferrer' },
 	        'Target'
 	      )
 	    ),
@@ -29246,7 +29245,7 @@
 	      null,
 	      _react2.default.createElement(
 	        'a',
-	        { href: amazon },
+	        { href: amazon, target: '_blank', rel: 'noopener noreferrer' },
 	        'Amazon'
 	      )
 	    ),
@@ -29255,7 +29254,7 @@
 	      null,
 	      _react2.default.createElement(
 	        'a',
-	        { href: bbb },
+	        { href: bbb, target: '_blank', rel: 'noopener noreferrer' },
 	        'Bed Bath & Beyond'
 	      )
 	    ),
@@ -29264,7 +29263,7 @@
 	      null,
 	      _react2.default.createElement(
 	        'a',
-	        { href: cb1 },
+	        { href: cb1, target: '_blank', rel: 'noopener noreferrer' },
 	        'Crate & Barrel'
 	      )
 	    )
